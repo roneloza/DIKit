@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "DIKit",
     products: [
-        .library(name: "DIKit", targets: ["DIKit"]),
+        .library(name: "DIKit", type: .dynamic, targets: ["DIKit"]),
     ],
     targets: [
         .target(name: "DIKit", dependencies: [], path: "DIKit/Sources"),
